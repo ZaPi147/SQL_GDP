@@ -58,7 +58,7 @@ ORDER BY DIFFERENCE DESC
 
 
 --2. Który kraj i jak bardzo gęsto zaludniony ma w 2022 roku drugą największą powierzchnię mierzoną w km2?
-     Which country and how densely populated in 2022 year has the second largest area measured in km2? --
+--   Which country and how densely populated in 2022 year has the second largest area measured in km2?
 
 SELECT
 	"COUNTRY (data from WPR)"
@@ -77,7 +77,7 @@ WHERE
 
 
 --3. Które państwa o PKB per capita większym od średniej zanotują pomiędzy latami 2022 oraz 2030 spadek liczby ludności?
-     Which countries with GDP per capita higher than average will meet a population decline between 2022 and 2030? --
+--   Which countries with GDP per capita higher than average will meet a population decline between 2022 and 2030?
 
 SELECT
 	"COUNTRY (data from WPR)"
@@ -95,7 +95,7 @@ ORDER BY "POPULATION DIFFERENCE";
 
 
 --4. Ile krajów z najmniejszym PKB potrzeba ,aby przewyższyć wartość PKB kraju z najwyższym wartością w 2022 roku?
-     How many countries with the lowest GDP are needed to exceed the GDP of country with the highest result in 2022 year? --
+--   How many countries with the lowest GDP are needed to exceed the GDP of country with the highest result in 2022 year?
 
 WITH GDP_calculations AS
 (SELECT
@@ -113,7 +113,7 @@ FROM general_data);
 
 
 --5. O ile USD wzrósł PKB  w każdym kraju w 2022 roku?
-     By how much USD did GDP increase in each country in 2022? --
+--   By how much USD did GDP increase in each country in 2022?
 
 SELECT
 	"COUNTRY (data from WB)"
@@ -125,7 +125,7 @@ WHERE "YEAR" = 2022
 
 
 --6. Jak wielkie byłoby PKB kraju dla którego przyjmiemy największe PKB per capita oraz największą ludność w 2022 roku, która jest taka sama w obydwu źródłach danych?
-     How big would be the GDP of a country for which we assume the largest GDP per capita and the largest population in 2022, which is the same for both data sources? --
+--   How big would be the GDP of a country for which we assume the largest GDP per capita and the largest population in 2022, which is the same for both data sources?
 
 SELECT
 	((SELECT
@@ -143,7 +143,7 @@ LIMIT 1
 
 
 --7. Które kraje mają największe PKB per capita wyrażone w USD dla lat dla których pobrano dane (1980, 2000, 2010, 2022)?
-     Which countries have the highest GDP per capita in USD for each year with the data (1980, 2000, 2010, 2022)? --
+--   Which countries have the highest GDP per capita in USD for each year with the data (1980, 2000, 2010, 2022)?
 
 SELECT
 	"COUNTRY (data from WB)"
@@ -161,7 +161,7 @@ WHERE ranking = 1
 
 
 --8. Które kraje spośród miejsc 75 do 115 pod względem powierzchni ma PKB powyżej średniej dla świata za 2022 rok?
-     Which countries in places from 75 to 115 in the field of area have GDP above the world average in 2022 year? --
+--   Which countries in places from 75 to 115 in the field of area have GDP above the world average in 2022 year?
 
 SELECT
 	*
@@ -180,7 +180,7 @@ WHERE ("GDP in USD" > (SELECT AVG("GDP in USD")
 
 
 --9. Czy na świecie więcej krajów jest w recesji czy ma wzrost gospodarczy w 2022 roku?
-     Are more countries in the world in recession or in economic growth in 2022 year? --
+--   Are more countries in the world in recession or in economic growth in 2022 year?
 
 SELECT
 	"COUNTRIES IN ECONOMIC GROWTH"
@@ -202,7 +202,7 @@ FROM
 
 
 --10. Jaki kraj ma największe i najmniejsze PKB per capita i jaka jest jego wartość dla Polski w 2022 roku?
-      What is the country with the highest and the lowest GDP per capita in the world and what is this value in 2022 for Poland? --
+--    What is the country with the highest and the lowest GDP per capita in the world and what is this value in 2022 for Poland?
 	 
 SELECT * 
 FROM 
@@ -239,7 +239,7 @@ ORDER BY "GDP per capita in USD" DESC);
 
 
 --11. W którym roku każdy kraj miał najwyższy wzrost PKB per capita mierzony w % i ile on wynosił?
-      In which year each country had the highest GDP growth per capita in % and how much was it? -- 
+--    In which year each country had the highest GDP growth per capita in % and how much was it? 
 
 SELECT
 	"COUNTRY (data from WB)"
@@ -257,7 +257,7 @@ ORDER BY 2 DESC NULLS LAST;
 
 
 --12. Jaki jest PKB 20 najbardziej ludnych krajów i jaki stanowi to procent względem światowego PKB za 2022 rok?
-      What is the GDP of the 20 the most populated cuntries and their percentage to the GDP of the world in 2022? --
+--    What is the GDP of the 20 the most populated cuntries and their percentage to the GDP of the world in 2022?
 
 SELECT
 	SUM(all_countries.GDPall) AS "world GDP"
@@ -281,7 +281,7 @@ ON top_20.country20 = all_countries.countryall;
 
 
 --13. Na podstawie porównania PKB w latach 2010 i 2022 określmy czy kraj ma szansę na wzrost gospodarczy, czy też jest zagrożony recesją.
-      Based on a comparison of the GDP in 2010 and 2022 define if country has possibility of economic growth or has risk of recession. --
+--    Based on a comparison of the GDP in 2010 and 2022 define if country has possibility of economic growth or has risk of recession.
 
 
 SELECT
@@ -311,7 +311,7 @@ ON country2010 = country2022);
 
 
 --14. Czy jest jakiś kraj w pierwszej dziesiątce krajów z procentowym wzrostem PKB i w pierwszej dziesiątce pod względem wzrostu liczby ludności w 2022 roku?
-      Is there any country in the top 10 countries with percentage GDP growth and in the top 10 with population growth in 2022 year ? --
+--    Is there any country in the top 10 countries with percentage GDP growth and in the top 10 with population growth in 2022 year ?
 
 WITH top_population AS
 	(SELECT
@@ -340,7 +340,7 @@ INNER JOIN top_GDP
 ON top_GDP.country = top_population.country;
 
 --15. Ile jest krajów w ONZ i jakie są średnie wartości wzrostu PKB oraz populacji dla całej organizacji w 2022 roku?
-      How many countries is in UN and what are average values of growth in GDP and population for whole organisation in 2022 year? --
+--    How many countries is in UN and what are average values of growth in GDP and population for whole organisation in 2022 year?
 
 
 SELECT
@@ -363,7 +363,7 @@ SELECT
 	
 
 --16. Czy w 2022 roku większe PKB ma 10 najbardziej ludnych krajów czy reszta pństw?
-      Do the 10 most populous countries have a higher GDP or the rest of the countries in 2022? --
+--    Do the 10 most populous countries have a higher GDP or the rest of the countries in 2022?
 
 SELECT 
 	"TOP 10 GDP"
@@ -402,7 +402,7 @@ FROM
 
 
 --17. Ile krajów o najmniejszym PKB potrzeba aby przewyższyć PKB Stanów Zjednoczonych za 2022 rok?
-      How many countries with the lowest GDP do we need to exceed GDP of United States in 2022 year? --
+--    How many countries with the lowest GDP do we need to exceed GDP of United States in 2022 year?
 
 WITH assumptions AS
 (SELECT
@@ -459,7 +459,7 @@ FROM
 
 
 --18. Jakim procentem światowego PKB w 2022 roku jest światowe PKB z roku 2000?
-      What percentage of world GDP in 2022 is world GDP in 2000 year? --
+--    What percentage of world GDP in 2022 is world GDP in 2000 year?
 
 SELECT
 	ROUND(
@@ -475,7 +475,7 @@ AS "GDP 2000 AS PERCENTAGE OF GDP 2022";
 
 
 --19. Jakie kraje mają większe PKB i PKB per capita od Polski w 2022 roku?
-      What countries have higher GDP and GDP per capita than Poland in 2022 year? --
+--    What countries have higher GDP and GDP per capita than Poland in 2022 year?
 
 SELECT
 	"COUNTRY (data from WB)" AS COUNTRY
@@ -496,7 +496,7 @@ ORDER BY 2 DESC;
 
 
 --20. Które miejsce na świecie ma Polska pod względem PKB per capita w 2022 roku?
-      Where in the world does Poland rank in GDP per capita in 2022 year? --
+--    Where in the world does Poland rank in GDP per capita in 2022 year?
 
 WITH perCapitaRANK AS
 (SELECT
