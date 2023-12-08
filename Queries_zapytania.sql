@@ -44,7 +44,7 @@ Where in the world does Poland rank in GDP per capita in 2022 year?
 
 
 --1. Ponieważ do łączenia danych z dwóch źródeł użyto informacji o liczbie ludności w danym państwie, sprawdźmy jaka jest miedzy nimi różnica i jaki jest to procent?
-     Because we used data about population in a given country from two different sources, let's check what the difference is between them and what percentage it is? --
+--   Because we used data about population in a given country from two different sources, let's check what the difference is between them and what percentage it is?
 
 SELECT
 	"COUNTRY (data from WB)"
