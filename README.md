@@ -32,4 +32,4 @@ The data from worldpopulationreview.com are immediately ready to be imported int
 
 
 
-
+<a href="https://github.com/ZaPi147/SQL_GDP/blob/main/Database_BazaDanych.sql">Database_BazaDanych</a>
