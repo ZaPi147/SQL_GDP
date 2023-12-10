@@ -12,7 +12,7 @@ Data with general information about was obtained from the worldpopulationreview.
 2. Różnice między danymi z dwóch źródeł i problemy z tym związane / Differences between data from two different sources and problems because of thet reason: 
 
 <picture>
- <img alt="YOUR-ALT-TEXT" src="./pictures/WPRdata">
+ <img alt="YOUR-ALT-TEXT" src="./pictures/WPRdata.png">
 </picture>
 
 
