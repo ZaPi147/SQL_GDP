@@ -17,7 +17,7 @@ Data with general information about was obtained from the worldpopulationreview.
 </picture>
 </br>
 <picture>
- <img alt="RAW-DATA-FROM-WB" src="./pictures/unpreparedData..png">
+ <img alt="RAW-DATA-FROM-WB" src="./pictures/unpreparedData.png">
 </picture>
 
 
