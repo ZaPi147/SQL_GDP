@@ -1,6 +1,7 @@
 <h3>1. Źródła danych / Data sources: </h3>
 
 https://worldpopulationreview.com/
+</br>
 https://databank.worldbank.org/source/world-development-indicators
 
 Ze strony worldpopulationreview.com zostały pozyskane dane z ogólnymi informacjami na temat państw świata. Dane na temat populacji dotyczyły tam lat 1980, 2000, 2010, 2022, 2023, 2030 oraz 2050. Na tej podstawie, w celu dalszych analiz ze strony World Bank zostały pobrane dane dotyczące populacji i wskaźników PKB we wspomnianych wcześniej latach z przeszłośći.
