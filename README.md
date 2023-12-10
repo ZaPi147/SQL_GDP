@@ -35,7 +35,7 @@ Zaimportowane do Excela dane rozbito na poszczególne kolumny, gdzie następnie 
 
 The data imported into Excel was separated into individual columns, where content unnecessary for further analysis was then removed. Finally, the data was organised in rows in alphabetical and chronological order, leaving the headers.
 
-</br>
+
 Edytowane dane gotowe do zaimportowania do PostgreSQL / Edited data ready to be imported into PostgreSQL:
 <picture>
  <img alt="RAW-DATA-FROM-WB" src="./pictures/preparedData.png">
