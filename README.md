@@ -1,4 +1,4 @@
-<h3>1. Źródła danych / Data sources: </h3>
+<h2>1. Źródła danych / Data sources: </h2>
 
 https://worldpopulationreview.com/
 </br>
@@ -10,13 +10,15 @@ Data with general information about was obtained from the worldpopulationreview.
 1980, 2000, 2010, 2022, 2023, 2030 and 2050. On this basis, the population data and GDP indicators in the previously mentioned past years were downloaded from the World Bank for further analysis.
 
 
-2. Różnice między danymi z dwóch źródeł i problemy z tym związane / Differences between data from two different sources and problems because of thet reason: 
+<h2>2. Różnice między danymi z dwóch źródeł i problemy z tym związane / Differences between data from two different sources and problems because of thet reason:</h2>
 
 <picture>
- <img alt="YOUR-ALT-TEXT" src="./pictures/WPRdata.png">
+ <img alt="DATA-FROM-WPR" src="./pictures/WPRdata.png">
 </picture>
-
-
+</br>
+<picture>
+ <img alt="RAW-DATA-FROM-WB" src="./pictures/unpreparedDATA.png">
+</picture>
 
 
 pics WPR oraz WB1
@@ -26,7 +28,7 @@ Dane ze strony worldpopulationreview.com są od razu gotowe do zaimportowania do
 The data from worldpopulationreview.com are immediately ready to be imported into the database. In the case of all data from World Bank, we are dealing with several unwanted columns, their order does not suit us too. It was necessary to edit the data sheet using Excel.
 
 
-3. Przygotowanie danych w programie Excel / Data preparation in Excel:
+<h2>3. Przygotowanie danych w programie Excel / Data preparation in Excel:</h2>
 
 
 
