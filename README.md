@@ -22,7 +22,6 @@ Dane z worldpopulationreview.com gotowe do zaimportowania do PostgreSQL / Data f
  <img alt="DATA-FROM-WPR" src="./pictures/WPRdata.png">
 </picture>
 
-</br>
 Dane z World Bank wymagające dedycji przed zaimportowaniem do bazy dancyh / Data from World Bank requiring editing before importing into the database:
 <picture>
  <img alt="RAW-DATA-FROM-WB" src="./pictures/unpreparedData.png">
