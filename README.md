@@ -50,6 +50,17 @@ Edytowane dane gotowe do zaimportowania do PostgreSQL / Edited data ready to be 
 
 <a href="https://github.com/ZaPi147/SQL_GDP/blob/main/JoiningData_LaczenieDanych.sql">JoiningData_LaczenieDanych</a>
 
+Podczas procesu łączenia danych z obydwu źródeł napotkano następujące problemy:
+- różna liczba wszystkich państw na listach
+- dla około 30 procent państw ich nazwy różniły się w zależności od źródła
+- rożnice w liczbie populacji za 2022 rok, który był naszym punktem odniesienia.
+Poprzez skonstruowanie odpowiednich formuł łączących powyższe problemy zostały rozwiązane.
+
+The following problems were encountered during the process of joining data from two different sources:
+- different number of all countries on the lists
+- for about 30 percent of countries, their names differed depending on the source
+- differences in the population number in 2022 year, which was our reference point.
+By constructing appropriate joining formulas the above problems were solved.
 
 <h2>6. Analiza danych w PostgreSQL / Data analysis in PostgreSQL:</h2>
 
