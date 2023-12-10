@@ -1,6 +1,7 @@
 <h2>1. Źródła danych / Data sources: </h2>
 
 https://worldpopulationreview.com
+</br>
 https://databank.worldbank.org/source/world-development-indicators
 
 Ze strony worldpopulationreview.com zostały pozyskane dane z ogólnymi informacjami na temat państw świata. Dane na temat populacji dotyczyły tam lat 1980, 2000, 2010, 2022, 2023, 2030 oraz 2050. Na tej podstawie, w celu dalszych analiz ze strony World Bank zostały pobrane dane dotyczące populacji i wskaźników PKB we wspomnianych wcześniej latach z przeszłośći.
@@ -14,6 +15,7 @@ Data with general information about was obtained from the worldpopulationreview.
 Dane ze strony worldpopulationreview.com są od razu gotowe do zaimportowania do bazy danych. W przypadku wszystkich danych z World Bank mamy do czynienia z kilkoma zbędnymi kolumnami i nie pasującą nam ich kolejnością. Konieczna okazała się edycja arkusza danych za pomocą programu Excel.
 
 The data from worldpopulationreview.com are immediately ready to be imported into the database. In the case of all data from World Bank, we are dealing with several unwanted columns, their order does not suit us too. It was necessary to edit the data sheet using Excel.
+
 
 Dane z worldpopulationreview.com gotowe do zaimportowania do PostgreSQL / Data from worldpopulationreview.com ready to be imported into PostgreSQL:
 <picture>
@@ -32,6 +34,7 @@ Dane z World Bank wymagające dedycji przed zaimportowaniem do bazy dancyh / Dat
 Zaimportowane do Excela dane rozbito na poszczególne kolumny, gdzie następnie usunięto zawartość niepotrzebną do dalszych analiz. Na zakończenie uporządkowano dane wierszami w kolejności alfabetycznej i chronologicznej, zachowująć nagłówki.
 
 The data imported into Excel was separated into individual columns, where content unnecessary for further analysis was then removed. Finally, the data was organised in rows in alphabetical and chronological order, leaving the headers.
+
 </br>
 Edytowane dane gotowe do zaimportowania do PostgreSQL / Edited data ready to be imported into PostgreSQL:
 <picture>
