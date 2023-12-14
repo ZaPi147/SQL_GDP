@@ -178,3 +178,8 @@ FULL JOIN countries_worldpopulationreview AS cwpr
 	ORDER BY WBdu2.year,WBdu2.core_country
 
 SELECT * FROM general_DATA;
+
+--Eksport tabeli z danymi do formatu .csv w celu zrobienia wizualizacji w Power BI
+--Export of table to .csv file to make visualization in the Power BI
+
+COPY general_DATA TO 'C:\Users\Admin\Desktop\GITHUB\general_data.csv' WITH (FORMAT CSV, HEADER);
